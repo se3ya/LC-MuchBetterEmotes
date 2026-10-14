@@ -1,0 +1,49 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <AssemblyName>MuchBetterEmotes</AssemblyName>
+        <Description>More emotes and a sign you can draw on, rebuilt for v81.</Description>
+        <Configurations>Debug;Release</Configurations>
+        <LangVersion>latest</LangVersion>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <BepInExPluginGuid>com.seeya.muchbetteremotes</BepInExPluginGuid>
+        <BepInExPluginName>Much Better Emotes</BepInExPluginName>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>embedded</DebugType>
+        <PathMap>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)'))=./,$(NuGetPackageRoot)=./nuget/</PathMap>
+        <EnableSourceLink>false</EnableSourceLink>
+        <IncludeSourceRevisionInInformationalVersion>false</IncludeSourceRevisionInInformationalVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
+        <PackageReference Include="BepInEx.AssemblyPublicizer.MSBuild" Version="0.4.2" PrivateAssets="all" />
+        <PackageReference Include="BepInEx.Core" Version="5.*" />
+        <PackageReference Include="BepInEx.PluginInfoProps" Version="2.1.0" PrivateAssets="all" />
+        <PackageReference Include="LethalCompany.GameLibs.Steam" Version="81.0.5-ngd.0" Publicize="true" PrivateAssets="all" />
+        <PackageReference Include="Microsoft.Unity.Analyzers" Version="1.25.0" PrivateAssets="all" IncludeAssets="runtime; build; native; contentfiles; analyzers" />
+        <PackageReference Include="UnityEngine.Modules" Version="2022.3.62" IncludeAssets="compile" PrivateAssets="all" />
+        <PackageReference Include="Rune580.Mods.LethalCompany.InputUtils" Version="0.7.13" IncludeAssets="compile" />
+        <PackageReference Include="AinaVT-LethalConfig" Version="1.4.6" Private="False" />
+        <PackageReference Include="Xilophor.LethalNetworkAPI" Version="3.4.2" Private="False" />
+    </ItemGroup>
+
+    <Target Name="DeployToProfile" AfterTargets="PostBuildEvent" Condition="'$(DeployDir)' != ''">
+        <ItemGroup>
+            <_DeployBundle Include="$(MSBuildProjectDirectory)\..\..\assets\muchbetteremotes" Condition="Exists('$(MSBuildProjectDirectory)\..\..\assets\muchbetteremotes')" />
+            <_DeployBundle Include="$(MSBuildProjectDirectory)\..\..\assets\muchbetteremotes.manifest" Condition="Exists('$(MSBuildProjectDirectory)\..\..\assets\muchbetteremotes.manifest')" />
+        </ItemGroup>
+        <MakeDir Directories="$(DeployDir)" Condition="!Exists('$(DeployDir)')" />
+        <Copy SourceFiles="$(TargetDir)MuchBetterEmotes.dll" DestinationFolder="$(DeployDir)" />
+        <Copy SourceFiles="@(_DeployBundle)" DestinationFolder="$(DeployDir)" SkipUnchangedFiles="true" Condition="'@(_DeployBundle)' != ''" />
+        <Message Importance="high" Text="[MuchBetterEmotes] Deployed MuchBetterEmotes.dll -&gt; $(DeployDir)" />
+    </Target>
+
+</Project>

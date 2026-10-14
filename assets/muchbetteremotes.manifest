@@ -1,0 +1,123 @@
+ManifestFileVersion: 0
+CRC: 3360414790
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 776c1192702dde93e4fb047a2b580aac
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 178a02b6e0b1b1f06a2b09da84eefc25
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: 776c1192702dde93e4fb047a2b580aac
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 74
+  Script: {instanceID: 0}
+- Class: 83
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cfabb0440166ab443bba8876756fdfa9, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e19747de3f5aca642ab2be37e372fb86, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 128
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/OnChangeEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/SelectionEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/SubmitEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/TextSelectionEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/TouchScreenKeyboardEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.VertexGradient
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Button/ButtonClickedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.FontData
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
+Assets:
+- Assets/BetterEmotesReborn/SignWheel.png
+- Assets/BetterEmotesReborn/moreemotes/resources/plegs.prefab
+- Assets/BetterEmotesReborn/SignGlyphs.png
+- Assets/BetterEmotesReborn/Clips/D_Middle_Finger.anim
+- Assets/BetterEmotesReborn/moreemotes/resources/Sign.prefab
+- Assets/BetterEmotesReborn/Clips/Middle_Finger.anim
+- Assets/BetterEmotesReborn/Clips/Salute.anim
+- Assets/BetterEmotesReborn/Clips/ThumbsUp.anim
+- Assets/BetterEmotesReborn/Clips/D_Clap.anim
+- Assets/BetterEmotesReborn/moreemotes/resources/MoreEmotesMenu.prefab
+- Assets/BetterEmotesReborn/Clips/EmoteRest.anim
+- Assets/BetterEmotesReborn/Clips/The_Griddy.anim
+- Assets/BetterEmotesReborn/Clips/Wave.anim
+- Assets/BetterEmotesReborn/SignPanel.prefab
+- Assets/BetterEmotesReborn/Clips/Sign.anim
+- Assets/BetterEmotesReborn/Clips/Clap.anim
+- Assets/BetterEmotesReborn/Clips/SixSeven.anim
+- Assets/BetterEmotesReborn/moreemotes/SingleClapEmote2.ogg
+- Assets/BetterEmotesReborn/moreemotes/SingleClapEmote1.ogg
+- Assets/BetterEmotesReborn/Clips/Prisyadka.anim
+- Assets/BetterEmotesReborn/SignBase.asset
+- Assets/BetterEmotesReborn/Clips/Shy.anim
+- Assets/BetterEmotesReborn/Clips/Twerk.anim
+- Assets/BetterEmotesReborn/Clips/D_Sign.anim
+Dependencies: []

@@ -1,0 +1,1 @@
+- Remake custom authot assets and the sign mask but not animations (later release)
